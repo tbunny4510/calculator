@@ -64,7 +64,7 @@ button {
 
 button:hover {
     background-color: #00f;
-    box-shadow: 0 0 10px 3px #00f;
+    box-shadow: 0 0 10px 3px #c90;
 }
 
 #plus, #equals {
