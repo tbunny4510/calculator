@@ -67,6 +67,16 @@ button:hover {
     box-shadow: 0 0 10px 3px #400;
 }
 
+.number {
+    background: linear-gradient(127deg, #0f0, #0a0, #040);
+    color: #000;
+}
+
+.number:hover {
+    background: linear-gradient(127deg, #040, #0a0, #0f0);
+    box-shadow: 0 0 10px 3px #111;
+}
+
 #plus, #equals {
     flex: 3;
 }
