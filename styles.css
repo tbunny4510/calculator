@@ -53,18 +53,18 @@ div {
 }
 
 button {
-    background-color: #004;
+    background: linear-gradient(127deg, #004, #00a, #00f);
     color: #fff;
     border: 0;
     padding: 0;
     border-radius: 25px;
-    margin: 15px;
+    margin: 10px;
     font-size: 30px;
 }
 
 button:hover {
-    background-color: #00f;
-    box-shadow: 0 0 10px 3px #c90;
+    background: linear-gradient(127deg, #00f, #00a, #004);
+    box-shadow: 0 0 10px 3px #400;
 }
 
 #plus, #equals {
