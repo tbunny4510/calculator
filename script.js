@@ -2,6 +2,7 @@ const nums = document.querySelectorAll('.number');
 const ops = document.querySelectorAll('.ops');
 const screen = document.querySelector('#screen');
 const clear = document.querySelector('#clear');
+const equals = document.querySelector('#equals');
 
 let total = 0;
 let displayArr = [];
@@ -25,6 +26,12 @@ function math(n1, op, n2) {
     };
 };
 
+function clearAll() {
+    init = false;
+    total = 0;
+    displayArr = [];
+};
+
 function operate(n1) {
     total = math(total, operator, n1);
 };
@@ -36,9 +43,7 @@ nums.forEach((num) => {
 });
 
 clear.addEventListener('click', () => {
-    init = false;
-    total = 0;
-    displayArr = [];
+    clearAll()
     screen.textContent = total;
 });
 
@@ -54,4 +59,10 @@ ops.forEach((op) => {
         displayArr = [];
         operator = op.value;
     });
+});
+
+equals.addEventListener('click', () => {
+    operate(+displayArr.join(''));
+    screen.textContent = total;
+    clearAll();
 });
