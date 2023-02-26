@@ -71,10 +71,6 @@ button:hover {
     flex: 3;
 }
 
-#zero {
-    flex: 2;
-}
-
-#dot, #minus, button, #lastColumn {
+#dot, #minus, button, #lastColumn, #zero {
     flex: 1;
 }
